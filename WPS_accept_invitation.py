@@ -1,6 +1,6 @@
 invite_userid = 272299586
-
 invite_userid2 = 892431717
+invite_userid3 = 238785966
 
 import requests
 
@@ -24,4 +24,4 @@ invite_url = 'http://zt.wps.cn/2018/clock_in/api/invite'
 for i in sids:
     requests.post(invite_url, headers={'sid': i}, data={'invite_userid': invite_userid})
     requests.post(invite_url, headers={'sid': i}, data={'invite_userid': invite_userid2})
-    
+    requests.post(invite_url, headers={'sid': i}, data={'invite_userid': invite_userid3})
